@@ -15,7 +15,7 @@ package com.github.saulocalixto.exercicios;
 public class main {
     
     public static void main(String[] args) {
-        int[] cpf = {5,4,6,3,4,5,3,6,5,9,5};
+        int[] cpf = {3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
         
         long startTime = System.nanoTime();
         System.out.println(Cpf.verificaCpf1(cpf));
