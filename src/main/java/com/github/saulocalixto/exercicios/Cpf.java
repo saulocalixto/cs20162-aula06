@@ -34,9 +34,6 @@ public class Cpf {
         int j = obterResto(obterResto(sj, 11), 10);
         int k = obterResto(obterResto(sk, 11), 10);
         
-        System.out.println("J: " + j + " d[9] " + d[9]);
-        System.out.println("K: " + k + " d[10] " + d[10]);
-        
         return (j == d[9] && k == d[10]);
         
     }
@@ -81,10 +78,26 @@ public class Cpf {
                 //To change body of generated methods, choose Tools | Templates.
         }
         
-        int p = d[8] + d[7] + d[6] + d[5] + d[4] + d[3] + d[2] + d[1] + d[0];
-        int s = d[8] + p;
+        int p = d[8];
+        int s = d[8];
         
-        
+        p += d[7];
+        s += p;
+        p += d[6];
+        s += p;
+        p += d[5];
+        s += p;
+        p += d[4];
+        s += p;
+        p += d[3];
+        s += p;
+        p += d[2];
+        s += p;
+        p += d[1];
+        s += p;
+        p += d[0];
+        s += p;
+    
         int j = obterResto(obterResto(s, 11), 10);
         int k = obterResto(obterResto((s - p + 9 * j), 11), 10);
         
