@@ -34,6 +34,9 @@ public class Cpf {
         int j = obterResto(obterResto(sj, 11), 10);
         int k = obterResto(obterResto(sk, 11), 10);
         
+        System.out.println("J: " + j + " d[9] " + d[9]);
+        System.out.println("K: " + k + " d[10] " + d[10]);
+        
         return (j == d[9] && k == d[10]);
         
     }
