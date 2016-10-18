@@ -69,10 +69,7 @@ public class CpfTest {
 
         Cpf.verificaCpf1(cpfvalido_i2);
     }
-
-    /**
-     *
-     */
+    
     @Test
     public void cpfvalidoCpf2() {
 
@@ -82,12 +79,17 @@ public class CpfTest {
     @Test
     public void cpfvalidoCpf2_2() {
 
-        Cpf.verificaCpf1(cpfvalido_i);
+        Cpf.verificaCpf2(cpfvalido_i);
     }
 
-    /**
-     *
-     */
+    @Test
+    public void cpfvalidoCpf2_3() {
+
+        Cpf.verificaCpf2(cpfvalido_i2);
+    }
+    
+    ///////////////////////////////////
+    
     @Test
     public void cpfvalidoCpf3() {
 
@@ -97,15 +99,18 @@ public class CpfTest {
     @Test
     public void cpfvalidoCpf3_2() {
 
-        Cpf.verificaCpf1(cpfvalido_i);
+        Cpf.verificaCpf3(cpfvalido_i);
     }
 
-    /**
-     *
-     */
+    @Test
+    public void cpfvalidoCpf3_3() {
+
+        Cpf.verificaCpf3(cpfvalido_i2);
+    }
+    
     @Test
     public void apenasParaAgradarJacocoTool100PorCentoCobertura() {
-        new Cpf();
-    }
+        Cpf.chamarConstrutor();
+    } 
 
 }
