@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2016. Engenharia de Software - Instituto de Informática (UFG)
+ * Creative Commons Attribution 4.0 International License.
+ * Discente : Saulo de Araújo Calixto
+ */
+
 package com.github.saulocalixto.exercicios;
 
 /**
@@ -22,8 +28,10 @@ public final class MaisRapido {
 
     public static void main(final String[] args) {
 
-        int[] cpf = {Cpf.UM, Cpf.QUATRO, Cpf.NOVE, Cpf.CINCO, Cpf.SEIS,
-            Cpf.DEZ, Cpf.QUATRO, Cpf.UM, Cpf.DOIS, Cpf.DOIS, Cpf.UM};
+        int[] cpf = {Cpf.POSICAOUM, Cpf.POSICAOQUATRO, Cpf.POSICAONOVE,
+            Cpf.POSICAOCINCO, Cpf.POSICAOSEIS, Cpf.POSICAODEZ,
+            Cpf.POSICAOQUATRO, Cpf.POSICAOUM, Cpf.POSICAODOIS,
+            Cpf.POSICAODOIS, Cpf.POSICAOUM};
 
         long startTime = System.nanoTime();
         int contador = Cpf.REPETIR;
